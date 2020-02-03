@@ -1,0 +1,40 @@
+body{
+  padding: 0px;
+  margin: 0px;
+    overflow: hidden;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+}
+
+.map,
+.poem{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.map,
+.scroll{
+  position:absolute;
+}
+
+img{
+  border:solid 1px red;
+}
+
+.map{
+  left:0px;
+  top:0px;
+}
+
+.pos_up{
+  top:0px;
+  transition: top 2s;
+}
+
+.pos_down{
+  top:94%;
+  transition: top 2s;
+}
