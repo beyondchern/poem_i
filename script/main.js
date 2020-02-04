@@ -2,11 +2,10 @@
 var h_scroll = 1000;
 var scrolled_up = true;
 
-function dqqresize(){
-  var w = window.visualViewport.width-5;
-  var h = window.visualViewport.height-5;
+function onResize(){
+  var w = window.visualViewport.width;
+  var h = window.visualViewport.height;
 
-  console.log(w + " " + h)
   var h_i = h*0.06;
   h_scroll = h-h_i;
 
@@ -24,7 +23,7 @@ function dqqresize(){
   document.getElementById('map_img').style.width = w + "px";
 }
 
-function dqqscroll(){
+function scrollPoem(){
   scrolled_up = !scrolled_up;
   if(scrolled_up){
     document.getElementById('scroll_div').classList.remove("pos_down");
@@ -36,8 +35,4 @@ function dqqscroll(){
   }
 }
 
-window.addEventListener('resize', dqqresize);
-window.setTimeout(function(){
-  dqqresize()
-  dqqscroll()
-}, 1000)
+window.addEventListener('resize', onResize);

@@ -1,40 +1,32 @@
 body{
   padding: 0px;
   margin: 0px;
-    overflow: hidden;
+  overflow: hidden;
+  line-height: 0px;
 }
 
-.scroll {
-  display: flex;
-  flex-direction: column;
-}
-
-.map,
-.poem{
+#map_div,
+#poem_div{
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-.map,
-.scroll{
+#map_div,
+#scroll_div{
   position:absolute;
 }
 
-img{
-  border:solid 1px red;
-}
-
-.map{
-  left:0px;
-  top:0px;
+#map_div{
+  left: 0px;
+  top: 0px;
 }
 
 .pos_up{
-  top:0px;
-  transition: top 2s;
+  top: 0px;
+  transition: top 1.4s;
 }
 
 .pos_down{
-  top:94%;
-  transition: top 2s;
+  top: 94%;
+  transition: top 1.4s;
 }
