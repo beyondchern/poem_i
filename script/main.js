@@ -36,3 +36,7 @@ function scrollPoem(){
 }
 
 window.addEventListener('resize', onResize);
+
+setInterval(function(){
+	onResize()
+}, 200)

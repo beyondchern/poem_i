@@ -2,14 +2,14 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=0.7, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
 		<title></title>
 <script>
 setInterval(function(){
 
 	var s = ""
 	s += window.innerWidth + "/" + window.innerHeight + "<br>"
-	s += devicePixelRatio + "<br>"
+	s += window.devicePixelRatio + "<br>"
 
 	document.getElementById("div").innerHTML = s
 
@@ -18,6 +18,6 @@ setInterval(function(){
 </script>
 	</head>
 	<body style="font-size:20pt">
-<div id="div" style="display:block; width:100px; height:100px; background-color:yellow">awa</div>
+<div id="div" style="display:block; width:1000px; height:100px; background-color:yellow">awa</div>
 	</body>
 </html>
